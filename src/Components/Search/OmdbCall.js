@@ -19,7 +19,7 @@ class OmdbCall extends Component {
 
 // Get More Ratings from another Database searching from the Titles that were based down from the parent Component
   componentDidMount() {
-    const url = `http://www.omdbapi.com/?apikey=accc0453&t=${this.props.moreRatings}`;
+    const url = `https://www.omdbapi.com/?apikey=accc0453&t=${this.props.moreRatings}`;
     axios({
       method: 'GET',
       url: url,
