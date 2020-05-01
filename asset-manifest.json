@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/moviesOverload/static/css/main.1aceb02c.chunk.css",
+    "main.js": "/moviesOverload/static/js/main.cc6b5902.chunk.js",
+    "main.js.map": "/moviesOverload/static/js/main.cc6b5902.chunk.js.map",
+    "runtime-main.js": "/moviesOverload/static/js/runtime-main.a6fb3edf.js",
+    "runtime-main.js.map": "/moviesOverload/static/js/runtime-main.a6fb3edf.js.map",
+    "static/js/2.ab3f7afc.chunk.js": "/moviesOverload/static/js/2.ab3f7afc.chunk.js",
+    "static/js/2.ab3f7afc.chunk.js.map": "/moviesOverload/static/js/2.ab3f7afc.chunk.js.map",
+    "index.html": "/moviesOverload/index.html",
+    "precache-manifest.4902747a985357ea58b249e6a5ff192d.js": "/moviesOverload/precache-manifest.4902747a985357ea58b249e6a5ff192d.js",
+    "service-worker.js": "/moviesOverload/service-worker.js",
+    "static/css/main.1aceb02c.chunk.css.map": "/moviesOverload/static/css/main.1aceb02c.chunk.css.map",
+    "static/js/2.ab3f7afc.chunk.js.LICENSE.txt": "/moviesOverload/static/js/2.ab3f7afc.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/moviesOverload/static/media/logo.03bcfef0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6fb3edf.js",
+    "static/js/2.ab3f7afc.chunk.js",
+    "static/css/main.1aceb02c.chunk.css",
+    "static/js/main.cc6b5902.chunk.js"
+  ]
+}
