@@ -8,25 +8,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
 
-:root{
-    --background: #2B3964;
-    --mainSectionBackground: #F7F5F3;
-    --accentBlue: #809FBF;
-}
-
 html {
   font-size:62.5%;
   font-family: 'Lato', sans-serif; 
   color:white;
   background-color:black;
 }
-
 a {
   text-decoration:none;
   color:black;
 }
+form {
+  margin:25px 0;
+}
 h1,
-.aggregate h3  {
+.aggregate  {
   font-size:6.0rem;
   font-weight:700;
   letter-spacing:1rem;
@@ -35,6 +31,11 @@ h1,
 h2 {
  font-size:3.0rem;
 }
+li {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
 p {
   font-size: 2.0rem;
 }
@@ -42,20 +43,27 @@ span {
   font-size:1.5rem;
   letter-spacing:0.5rem;
 }
-form {
-  margin:25px 0;
-}
 
+/* Wrappers */
 .App {
   text-align: center;
 }
-
 .wrapper {
   margin:0 auto;
   text-align:center;
 }
-
-/* Header Styles */
+.ratingWrapper,
+.popularityWrapper {
+  display:grid;
+  align-items: center;
+}
+.ratingWrapper {
+  grid-template-columns: 2fr 2fr 1fr;
+}
+.popularityWrapper {
+  grid-template-columns: 1fr 1fr;
+  font-size:2.0rem;
+}
 
 /* Search Bar */
 input {
@@ -70,11 +78,6 @@ button {
 }
 
 /* Search Results */
-li {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px;
-}
 .movieResults {
   display:grid;
   width:80%;
@@ -82,28 +85,22 @@ li {
   grid-template-columns: 1fr;
   grid-gap:50px;
 }
-
 .movieEach {
   display:grid;
   grid-template-columns: 1fr 1fr;
   background-color:rgb(31, 31, 31);
   padding-right: 50px;
+  transition: all 0.5s linear;
+}
+.movieEach:hover {
+  scale:1.1;
 }
 .movieEach h2 {
-  padding:25px 0;
+  padding-top:15px;
 }
-
-.ratingWrapper,
-.popularityWrapper {
-  display:grid;
-  align-items: center;
-}
-.ratingWrapper {
-  grid-template-columns: 2fr 2fr 1fr;
-}
-.popularityWrapper {
-  grid-template-columns: 1fr 1fr;
-  font-size:2.0rem;
+.genreType {
+  padding:10px 0;
+  color:grey;
 }
 
 /* Ratings */
@@ -124,7 +121,6 @@ h5,
 .ratingNegative {
   font-size:2.0rem;
 }
-
 .ratingNegative,
 .popularityScore {
   color:grey;
@@ -136,11 +132,18 @@ h5,
 }
 .aggregate h2 {
   font-size:6.0rem;
-
+}
+.green {
+  color:rgb(25, 206, 25);
+}
+.orange {
+  color:rgb(238, 241, 33);
+}
+.red {
+  color:red;
 }
 
 /* Footer Styles */
-
 footer {
   padding:25px 0;
   background-color:rgb(31, 31, 31);

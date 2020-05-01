@@ -6,7 +6,7 @@ function Genre(props) {
     props.genre.map((genre) => {
         props.genreIndex.genres.map((genreIndex) => {
             if (genre === genreIndex.id) {
-                finalArray.push(genreIndex.name)
+               finalArray.push(genreIndex.name)
             }
         });
     });
@@ -14,11 +14,9 @@ function Genre(props) {
     const finalGenre = finalArray.join(', ')
     return (
       <div>
-        <h5>{finalGenre}</h5>
+        <h5 className="genreType">{finalGenre}</h5>
       </div>
     )    
 }
-
-
 
 export default Genre;

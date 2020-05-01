@@ -49,13 +49,12 @@ class Search extends Component {
         url: `https://api.themoviedb.org/3/genre/movie/list?api_key=4e34e370c74f17cdb9f681afc05efa93&language=en-US`,
         dataType: 'json',
       }).then((results2) => {
-      this.setState({
-        genreArray: results2.data
-      })
+        this.setState({
+          genreArray: results2.data
+        })
       })
   }
   
-
   handleUserInput = (event) => { 
     //Stores user-input form the search bar into this.state.userInput
     this.setState({
@@ -77,8 +76,8 @@ class Search extends Component {
           <ul className="movieResults">
           {this.state.moviesArray.map((moviesList) => {
             return (
-              <Fade bottom>
-              <li className="movieEach"key={moviesList.id}>
+              <Fade bottom key={moviesList.id}>
+              <li className="movieEach">
               <Image image={moviesList.backdrop_path} title={moviesList.original_title}/>
                 <div>
                 <h2>{moviesList.original_title.toUpperCase()} 

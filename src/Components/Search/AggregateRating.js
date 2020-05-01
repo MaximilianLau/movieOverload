@@ -25,12 +25,25 @@ const filterResults = results.filter((defined) => {
 // Find aggregate number rounded to first decimal place
     const sum = filterResults.reduce((a, b) => a + b, 0);
     const aggregate = (sum / filterResults.length).toFixed(1)
-
-    return (
-        <div className="aggregate">
-            <h3>{aggregate}</h3>
-        </div>
-   )
+    
+    if (aggregate >=7.0) {
+        return (
+            <div className="aggregate green">
+                <h3>{aggregate}</h3>
+            </div>
+    )
+    } else if (aggregate >= 3.5 && aggregate <7.0) {
+        return (
+            <div className="aggregate orange">
+                <h3>{aggregate}</h3>
+            </div>
+        )
+    } else if (aggregate >3.5 || (aggregate)) {
+        return (
+            <div className="aggregate red">
+                <h3>{aggregate}</h3>
+            </div>
+        )
+    }
 }
-
 export default AggregateRating

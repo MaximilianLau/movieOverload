@@ -5,7 +5,7 @@ function Image(props) {
     if (props.image === null)
     return (
         <div>
-            <img className="imageResult" src="https://via.placeholder.com/500x281.jpg/313131/808080?text=TOO+BAD+SO+SAD+No-Images-Available" alt="No photo available for this movie"></img>
+            <img className="imageResult" src="https://via.placeholder.com/500x281.jpg/313131/808080?text=TOO+BAD+SO+SAD+No-Images-Available" alt="Placeholder "></img>
         </div>
     )
     else {
