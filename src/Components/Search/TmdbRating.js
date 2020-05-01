@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 function TmdbRating(props) {
 // Checks if each is undefined, returns rating, and bar score if it isn't, returns N/A if it is undefined
     if (props.rating === undefined || props.rating === 0) {

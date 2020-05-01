@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from './Header.js'
-import Footer from './Footer.js'
-import Search from './Search.js'
+import Header from './Components/Header/Header.js'
+import Footer from './Components/Footer/Footer.js'
+import Search from './Components/Search/Search.js'
 
 import './App.css';
 
