@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/moviesOverload/static/css/main.bc36851c.chunk.css",
-    "main.js": "/moviesOverload/static/js/main.7c16d76e.chunk.js",
-    "main.js.map": "/moviesOverload/static/js/main.7c16d76e.chunk.js.map",
-    "runtime-main.js": "/moviesOverload/static/js/runtime-main.a6fb3edf.js",
-    "runtime-main.js.map": "/moviesOverload/static/js/runtime-main.a6fb3edf.js.map",
-    "static/css/2.f1d36a8f.chunk.css": "/moviesOverload/static/css/2.f1d36a8f.chunk.css",
-    "static/js/2.e0d7a3ae.chunk.js": "/moviesOverload/static/js/2.e0d7a3ae.chunk.js",
-    "static/js/2.e0d7a3ae.chunk.js.map": "/moviesOverload/static/js/2.e0d7a3ae.chunk.js.map",
-    "index.html": "/moviesOverload/index.html",
-    "precache-manifest.0c14946d54b20a8af5393c83908f5092.js": "/moviesOverload/precache-manifest.0c14946d54b20a8af5393c83908f5092.js",
-    "service-worker.js": "/moviesOverload/service-worker.js",
-    "static/css/2.f1d36a8f.chunk.css.map": "/moviesOverload/static/css/2.f1d36a8f.chunk.css.map",
-    "static/css/main.bc36851c.chunk.css.map": "/moviesOverload/static/css/main.bc36851c.chunk.css.map",
-    "static/js/2.e0d7a3ae.chunk.js.LICENSE.txt": "/moviesOverload/static/js/2.e0d7a3ae.chunk.js.LICENSE.txt",
-    "static/media/logoBottom.png": "/moviesOverload/static/media/logoBottom.a7beb6b7.png",
-    "static/media/logoTop.png": "/moviesOverload/static/media/logoTop.43aea44b.png"
+    "main.css": "/movieOverload/static/css/main.bc36851c.chunk.css",
+    "main.js": "/movieOverload/static/js/main.3f21a7e5.chunk.js",
+    "main.js.map": "/movieOverload/static/js/main.3f21a7e5.chunk.js.map",
+    "runtime-main.js": "/movieOverload/static/js/runtime-main.469190e9.js",
+    "runtime-main.js.map": "/movieOverload/static/js/runtime-main.469190e9.js.map",
+    "static/css/2.f1d36a8f.chunk.css": "/movieOverload/static/css/2.f1d36a8f.chunk.css",
+    "static/js/2.e0d7a3ae.chunk.js": "/movieOverload/static/js/2.e0d7a3ae.chunk.js",
+    "static/js/2.e0d7a3ae.chunk.js.map": "/movieOverload/static/js/2.e0d7a3ae.chunk.js.map",
+    "index.html": "/movieOverload/index.html",
+    "precache-manifest.173b1142183e55d84e09dae6f330e655.js": "/movieOverload/precache-manifest.173b1142183e55d84e09dae6f330e655.js",
+    "service-worker.js": "/movieOverload/service-worker.js",
+    "static/css/2.f1d36a8f.chunk.css.map": "/movieOverload/static/css/2.f1d36a8f.chunk.css.map",
+    "static/css/main.bc36851c.chunk.css.map": "/movieOverload/static/css/main.bc36851c.chunk.css.map",
+    "static/js/2.e0d7a3ae.chunk.js.LICENSE.txt": "/movieOverload/static/js/2.e0d7a3ae.chunk.js.LICENSE.txt",
+    "static/media/logoBottom.png": "/movieOverload/static/media/logoBottom.a7beb6b7.png",
+    "static/media/logoTop.png": "/movieOverload/static/media/logoTop.43aea44b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a6fb3edf.js",
+    "static/js/runtime-main.469190e9.js",
     "static/css/2.f1d36a8f.chunk.css",
     "static/js/2.e0d7a3ae.chunk.js",
     "static/css/main.bc36851c.chunk.css",
-    "static/js/main.7c16d76e.chunk.js"
+    "static/js/main.3f21a7e5.chunk.js"
   ]
 }
