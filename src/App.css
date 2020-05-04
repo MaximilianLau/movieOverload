@@ -128,13 +128,8 @@ button {
   height:100%;
   border:3px solid grey;
 }
-button::-webkit-appearance{
-  font-size:2.7rem;
-}
-button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+button:hover{
+  border:3px solid #ff1177;
 }
 /* Search Results */
 .movieResults {
