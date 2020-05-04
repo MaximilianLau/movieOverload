@@ -8,7 +8,9 @@ function Genre(props) {
             if (genre === genreIndex.id) {
                finalArray.push(genreIndex.name)
             }
+          return null
         });
+        return null
     });
     // Split array into strings and add a comma and space between each
     const finalGenre = finalArray.join(', ')

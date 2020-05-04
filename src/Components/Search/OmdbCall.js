@@ -13,7 +13,7 @@ class OmdbCall extends Component {
       imDB:[],
       rottenTomatoes:[],
       metaCritic:[],
-      tmdb: props.tmDBRating
+      tmdb: props.tmDBRating,
     }
   }
 
@@ -26,9 +26,9 @@ class OmdbCall extends Component {
       dataType: 'json',
     }).then((results) => {
       const ratingCheck = results.data.Ratings;
-      // console.log(results.data.Ratings)
         this.setState({
           ratingsArray: results.data.Ratings,
+          year: results.Year
         })
       // Check if the Rating was valid, or an empty array
       if (ratingCheck !== undefined) {

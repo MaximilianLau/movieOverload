@@ -11,10 +11,8 @@ function Image(props) {
     else {
     return (
         // return 500px backdrop image// didn't like the way the poster image looked (took too much vertical space)
-        <div>
             <img className="imageResult" src={`https://image.tmdb.org/t/p/w500/${props.image}`} alt={props.title}></img>
-        </div>
-    )
+        )
     }
 }
 

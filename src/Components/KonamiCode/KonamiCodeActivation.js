@@ -1,7 +1,7 @@
-import React from 'react';
+import { useState, useEffect, useCallback, useRef } from "react";
 
-function KonamiCodeActivation(keyPress) {
-    const [konamiCode, setIsKonami] = useState(false);
+export default function KonamiCodeActivation(keyPress) {
+    const [KonamiCodeActivation, setIsKonami] = useState(false);
     const refIndex = useRef(0);
     const onKeyUpCallback = useCallback(e => {
         const codes = [
@@ -42,10 +42,8 @@ function KonamiCodeActivation(keyPress) {
         };
     }, [onKeyUpCallback]);
 
-    return [konamiCode, setIsKonami];
+    return [KonamiCodeActivation, setIsKonami];
 }
-
-// export default KonamiCodeActivation
 
 
 // import useKonamiCode from "./is-konami-code";
