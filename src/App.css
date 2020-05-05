@@ -229,7 +229,7 @@ footer p:nth-child(2) {
 }
 @media (max-width:850px){
   .imageResult {
-    position:absolute;
+    position:relative;
     opacity:0.25;
     width:150px;
     right:2.5%;
@@ -245,5 +245,10 @@ footer p:nth-child(2) {
 @media (max-width:600px) {
   .headerGlow {
     font-size:4.0rem;
+  }
+}
+@media (max-width:500px) {
+  .imageResult {
+    display:none;
   }
 }
