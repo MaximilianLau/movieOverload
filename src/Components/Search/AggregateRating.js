@@ -29,19 +29,19 @@ const filterResults = results.filter((defined) => {
     if (aggregate >=7.0) {
         return (
             <div className="aggregate green">
-                <h3>{aggregate}</h3>
+                <h3 tabindex="0">{aggregate}</h3>
             </div>
     )
     } else if (aggregate >= 3.5 && aggregate <7.0) {
         return (
             <div className="aggregate orange">
-                <h3>{aggregate}</h3>
+                <h3 tabindex="0">{aggregate}</h3>
             </div>
         )
     } else if (aggregate >3.5 || (aggregate)) {
         return (
             <div className="aggregate red">
-                <h3>{aggregate}</h3>
+                <h3 tabindex="0">{aggregate}</h3>
             </div>
         )
     }

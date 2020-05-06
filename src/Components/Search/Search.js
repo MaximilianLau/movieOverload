@@ -96,14 +96,14 @@ componentDidMount() {
               <li className="movieEach">
               <Image image={moviesList.backdrop_path} title={moviesList.original_title}/>
                 <div>
-                <h2>{moviesList.original_title.toUpperCase()} 
+                <h2 tabindex="0">{moviesList.original_title.toUpperCase()} 
                 ({ moviesList.release_date === undefined 
                 ? <p>N/A</p>
                  : moviesList.release_date.substring(0, 4)}) </h2>
                   <Genre genre={moviesList.genre_ids} genreIndex={this.state.genreArray}/>
-                  <PopularityRating popularity={moviesList.popularity}/>
+                  <PopularityRating popularity={moviesList.popularity} />
                   <TmdbRating rating= {moviesList.vote_average}/>
-                  <OmdbCall moreRatings={moviesList.original_title} tmDBRating={moviesList.vote_average}/>
+                  <OmdbCall moreRatings={moviesList.original_title} tmDBRating={moviesList.vote_average} />
                 </div>
               </li>
               </Fade>

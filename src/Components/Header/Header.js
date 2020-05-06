@@ -10,7 +10,7 @@ class Header extends Component {
         <img src={logoTop} className="diyLogoTop" alt="top half logo, Overload"></img>
         <img src={logoBottom} alt="bottom half of the logo, Overload"></img>
         </div>
-        <h1 className="headerGlow"><span>m</span>OV<span>i</span>ERLOAD</h1>
+        <h1 className="headerGlow" tabindex="0"><span>m</span>OV<span>i</span>ERLOAD</h1>
         <p>movie rating aggregator</p>
       </header>
     )
