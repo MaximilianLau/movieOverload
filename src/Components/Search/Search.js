@@ -23,6 +23,18 @@ class Search extends Component {
   // Submit adds function into state submit, resets user input, and then calls api with the submitted query
   handleSubmit = (event) => {
     event.preventDefault()
+    if (this.state.userInput=== "") { 
+      toast.error('No input detected 🤯🤯🤯', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: 'toast-alert',
+      });
+    } else {
     this.setState({
     userSubmit: this.state.userInput
     })
@@ -32,6 +44,7 @@ class Search extends Component {
       }, () => this.performSearch()) 
     }
   }
+}
   // Axios API call for Movie Information. Saves it to this.state.moviesArray
   performSearch = () =>{
       const url = `https://api.themoviedb.org/3/search/movie?api_key=4e34e370c74f17cdb9f681afc05efa93&query=${this.state.userSubmit}&page=1`;
