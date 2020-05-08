@@ -10,6 +10,9 @@ import Genre from './Genre.js';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+
 class Search extends Component {
   constructor(){
     super();
@@ -47,7 +50,7 @@ class Search extends Component {
 }
   // Axios API call for Movie Information. Saves it to this.state.moviesArray
   performSearch = () =>{
-      const url = `https://api.themoviedb.org/3/search/movie?api_key=4e34e370c74f17cdb9f681afc05efa93&query=${this.state.userSubmit}&page=1`;
+      const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${this.state.userSubmit}&page=1`;
     axios ({
     method: 'GET',
     url: url,
@@ -76,7 +79,7 @@ class Search extends Component {
 componentDidMount() {
     axios({
         method: 'GET',
-        url: `https://api.themoviedb.org/3/genre/movie/list?api_key=4e34e370c74f17cdb9f681afc05efa93&language=en-US`,
+      url: `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`,
         dataType: 'json',
       }).then((results2) => {
         this.setState({
@@ -98,7 +101,7 @@ componentDidMount() {
             <label htmlFor="movieName" className="visuallyHidden">enter movie name:</label>
             <input type="text" id="movieName" name="movieName" placeholder="OVER here!" value={this.state.userInput}
             onChange={this.handleUserInput}/> 
-            <button type="submit" id="movieButton"><RiSearchEyeLine /></button>
+            <button type="submit" id="movieButton" aria-label="submit search"><RiSearchEyeLine /></button>
           </form>
         </div>
         <ToastContainer/>
@@ -109,7 +112,7 @@ componentDidMount() {
               <li className="movieEach">
               <Image image={moviesList.backdrop_path} title={moviesList.original_title}/>
                 <div>
-                <h2 tabindex="0">{moviesList.original_title.toUpperCase()} 
+                <h2 tabIndex="0">{moviesList.original_title.toUpperCase()} 
                 ({ moviesList.release_date === undefined 
                 ? <p>N/A</p>
                  : moviesList.release_date.substring(0, 4)}) </h2>

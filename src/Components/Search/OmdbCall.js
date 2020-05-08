@@ -5,6 +5,8 @@ import RTRating from './RTRating.js'
 import MTRating from './MTRating.js'
 import AggregateRating from './AggregateRating.js'
 
+const API_KEY_EACH = process.env.REACT_APP_OMDB_API_KEY;
+
 class OmdbCall extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +21,7 @@ class OmdbCall extends Component {
 
 // Get More Ratings from another Database searching from the Titles that were based down from the parent Component
   componentDidMount() {
-    const url = `https://www.omdbapi.com/?apikey=accc0453&t=${this.props.moreRatings}`;
+    const url = `https://www.omdbapi.com/?apikey=${API_KEY_EACH}=${this.props.moreRatings}`;
     axios({
       method: 'GET',
       url: url,
