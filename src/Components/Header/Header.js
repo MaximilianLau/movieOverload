@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <header className="wrapper">
-        <div className="headerLogo">
+        <div id="top" className="headerLogo">
         <img src={logoTop} className="diyLogoTop" alt="top half logo, Overload"></img>
         <img src={logoBottom} alt="bottom half of the logo, Overload"></img>
         </div>

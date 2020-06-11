@@ -73,7 +73,18 @@ class Search extends Component {
       moviesArray: results.data.results
     })
     }
-  })
+  }).catch((error) => {
+      toast.error('API error', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: 'toast-alert',
+      });
+    })
   }
   // Axios API call to get a genre Index because the API only gives a number for genre value. Saves it into this.state.genreArray
 componentDidMount() {
@@ -85,6 +96,8 @@ componentDidMount() {
         this.setState({
           genreArray: results2.data
         })
+      }).catch((error)=> {
+        console.log('Error with API KEY for Genre Index')
       })
     }
   handleUserInput = (event) => { 

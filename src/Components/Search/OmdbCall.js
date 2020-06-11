@@ -27,6 +27,7 @@ class OmdbCall extends Component {
       url: url,
       dataType: 'json',
     }).then((results) => {
+      console.log(results)
       const ratingCheck = results.data.Ratings;
         this.setState({
           ratingsArray: results.data.Ratings,
@@ -53,13 +54,15 @@ class OmdbCall extends Component {
           metaCritic: mT
         })
       }
+     }).catch((error) => {
+       console.log('Error pulling from != TMDB')
      })
     }
 
   render() {
     return (
       <div>
-        <ImdbRating rating={this.state.imDB}/>
+        <ImdbRating rating={this.state.imDB} />
         <RTRating rating={this.state.rottenTomatoes}/>
         <MTRating rating={this.state.metaCritic}/>
         <AggregateRating  imdbRating={this.state.imDB} rtRating={this.state.rottenTomatoes} mtRating={this.state.metaCritic} tmdbRating={this.state.tmdb}/>

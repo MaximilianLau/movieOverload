@@ -1,0 +1,37 @@
+/* Back to Top */
+
+.scrollTop {
+  position: fixed; 
+  width: 100%;
+  bottom: 10px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 1s;
+  transition: opacity 0.4s;
+  opacity: 0.75;
+  color:#ff1177;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+  animation: wiggle 1s infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+  @keyframes wiggle {
+    20% { transform: translateY(3px); }
+    40% { transform: translateY(-3px); }
+    60% { transform: translateY(2px); }
+    80% { transform: translateY(-1px); }
+    100% { transform: translateY(0); }
+  }
